@@ -8,13 +8,43 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/webtopia',
+    name: 'webtopia',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    component: () => import('../views/WebtopiaView.vue')
+  },
+  {
+    path: '/DATAVERGENT',
+    name: 'datavergent',
+    component: () => import('../views/DatavergentView.vue')
+  },
+  {
+    path: '/NETAPUNK',
+    name: 'netapunk',
+    component: () => import('../views/NetapunkView.vue')
+  },
+  {
+    path: '/GAMERUNNER',
+    name: 'gamerunner',
+    component: () => import('../views/GamerunnerView.vue')
+  },
+  {
+    path: '/webtopia/camp092',
+    name: 'camp092',
+    component: () => import('../views/W_092.vue')
+  },
+  {
+    path: '/TEXT',
+    name: 'text',
+    component: () => import('../views/TextView.vue')
+  },
+  {
+    path: '/TEST',
+    name: 'test',
+    component: () => import('../components/UsersList.vue')
+  },
 ]
 
 const router = createRouter({
